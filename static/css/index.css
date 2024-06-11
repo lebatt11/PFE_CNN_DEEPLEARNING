@@ -1,0 +1,136 @@
+/* codingnepal */
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.logo h1 a {
+    color: white;
+    /* Couleur du texte en blanc */
+    text-decoration: none;
+    /* Enlever le soulignement */
+}
+
+
+/* Optionnel: Ajouter un effet de survol */
+
+.logo h1 a:hover {
+    color: #ccc;
+    /* Change la couleur sur survol, si désiré */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-right: 25px;
+}
+
+.links li {
+    margin: 0;
+    padding: 0px 12px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.links li a:hover {
+    color: #007bff;
+}
+
+
+/*.links li .active {
+    color: #007bff;
+}*/
+
+.login-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.login-btn a:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/shutterstock_641920864.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.content .btn {
+    font-size: 19px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.content .btn:hover {
+    background-color: #0056b3;
+}

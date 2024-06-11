@@ -1,0 +1,139 @@
+/* styles.css */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* header*/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.logo h1 a {
+    color: white;
+    /* Couleur du texte en blanc */
+    text-decoration: none;
+    /* Enlever le soulignement */
+}
+
+
+/* Optionnel: Ajouter un effet de survol */
+
+.logo h1 a:hover {
+    color: #ccc;
+    /* Change la couleur sur survol, si désiré */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-right: 25px;
+}
+
+.links li {
+    margin: 0;
+    padding: 0px 12px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.links li a:hover {
+    color: #007bff;
+}
+
+.links li .active {
+    color: #007bff;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.login-btn a:hover {
+    background-color: #0056b3;
+}
+
+
+/*header*/
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 20%;
+    height: 20%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}

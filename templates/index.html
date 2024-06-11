@@ -1,0 +1,74 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>-->
+    <!-- tester le modéle :-->
+    <!--<h1>Upload an Image for Prediction : </h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="imagefile" accept="image/*" required>
+        <button type="submit">Upload and Predict</button>
+    </form>-->
+    <!-- <form action="{{ url_for('logout') }}" method="post">
+                <button type="submit">Logout</button>
+    </form>-->
+<!--</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test x_rays images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="{{ url_for('house') }}">Home</a></h1>
+            </div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="{{ url_for('index') }}" class="action">Diagnostic</a></li>
+                    <li><a href="">Performance Analysis</a></li>
+                </ul>
+
+                <div class="login-btn">
+                    <a href="{{ 'login' }}">logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header-section">
+            <h3>Upload Files</h3>
+            <p>Upload images for prediction. only Images are allowed.</p>
+        </div>
+        <form action="/" method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="drop-section">
+                <div class="col">
+                    <div class="cloud-icon">
+                        <img src="{{ url_for('static', filename='icons/cloud.png') }}" alt="cloud">
+                    </div>
+                    <span>Drag & Drop your files here</span>
+                    <span>OR</span>
+                    <input type="file" name="imagefile" accept="image/*" id="file-upload" required>
+                    <label for="file-upload" class="custom-file-upload">Browse Files</label>
+                </div>
+                <div class="col">
+                    <div class="drop-here">Drop Here</div>
+                </div>
+            </div>
+            <button type="submit" class="upload-predict-button">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

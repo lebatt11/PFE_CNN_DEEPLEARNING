@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* header */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.logo h1 a {
+    color: white;
+    /* Couleur du texte en blanc */
+    text-decoration: none;
+    /* Enlever le soulignement */
+}
+
+
+/* Optionnel: Ajouter un effet de survol */
+
+.logo h1 a:hover {
+    color: #ccc;
+    /* Change la couleur sur survol, si désiré */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-right: 25px;
+}
+
+.links li {
+    margin: 0;
+    padding: 0px 12px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.links li a:hover {
+    color: #007bff;
+}
+
+
+/*.links li .active {
+    color: #007bff;
+}*/
+
+.login-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.login-btn a:hover {
+    background-color: #0056b3;
+}
+
+
+/* header */
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+/* Add these styles for centering the confusion matrix */
+
+.confusion-matrix-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.confusion-matrix {
+    max-width: 100%;
+    height: auto;
+}
